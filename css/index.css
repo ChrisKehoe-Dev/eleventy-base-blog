@@ -24,3 +24,37 @@ header img{
     margin-right: auto;
 
   }
+
+  main {
+    width:calc(66.666%);
+    padding:30px;
+    float:left;
+  }
+
+  aside {
+    width:calc(33.333%);
+    padding:30px;
+    float:left;
+  }
+
+  .iframecontainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+  .iframecontainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+
+    main, aside {
+        width:100%;
+        padding:30px;
+    }
+  }

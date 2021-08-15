@@ -12,7 +12,7 @@
   </head>
   <body>
     <header>
-      <a href="{{ '/' | url }}"><img src="/img/sloth.jpeg" /></a>
+      <a href="{{ '/' | url }}"><img src="/img/slipknot_logo2.png" /></a>
       
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
       <ul class="nav">
@@ -22,37 +22,54 @@
       </ul>
     </header>
 
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/img/husky.jpg" class="d-block w-100" alt="...">
+      <img src="/img/slip1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h5>
+        <p>Praesent pulvinar ante est, a laoreet enim ornare vitae. Etiam posuere odio auctor turpis efficitur, vehicula hendrerit erat iaculis. Aliquam erat volutpat. Duis tincidunt justo ac elit rutrum commodo. Vestibulum imperdiet at neque id accumsan. Nullam id enim eget nisl consequat placerat sit amet in sapien.</p>
+      </div>
     </div>
     <div class="carousel-item">
-      <img src="/img/bearish.jpg" class="d-block w-100" alt="...">
+      <img src="/img/slip2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+        <p>Praesent pulvinar ante est, a laoreet enim ornare vitae. Etiam posuere odio auctor turpis efficitur, vehicula hendrerit erat iaculis. Aliquam erat volutpat. Duis tincidunt justo ac elit rutrum commodo. Vestibulum imperdiet at neque id accumsan. Nullam id enim eget nisl consequat placerat sit amet in sapien.</p>
+      </div>
     </div>
     <div class="carousel-item">
-      <img src="/img/tiger.jpg" class="d-block w-100" alt="...">
+      <img src="/img/slip4.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+        <p>Praesent pulvinar ante est, a laoreet enim ornare vitae. Etiam posuere odio auctor turpis efficitur, vehicula hendrerit erat iaculis. Aliquam erat volutpat. Duis tincidunt justo ac elit rutrum commodo. Vestibulum imperdiet at neque id accumsan. Nullam id enim eget nisl consequat placerat sit amet in sapien.</p>
+      </div>
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
  
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-    <h2> Second Header - the London curse is real </h2>
       {{ content | safe }}
     </main>
+    <aside>
+      <iframe src="https://open.spotify.com/embed/album/5Zs0mNCTs73CqPKbZPWFX9" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque bibendum turpis erat, vel pretium turpis sodales sit amet. Mauris et massa rhoncus, tempus ex non, porttitor tellus. Maecenas feugiat elit massa, sit amet posuere nisl scelerisque at. In non ligula pulvinar, ultrices massa accumsan, tempor odio. Curabitur ac felis ipsum. Aenean mauris est, rhoncus et felis sed, iaculis scelerisque ex. Nunc facilisis, eros et maximus facilisis, orci justo placerat mi, in placerat leo purus sit amet nisi. Sed sollicitudin bibendum lorem sed elementum. Aenean elementum, lacus ut egestas tristique, tortor ex semper purus, eget lobortis neque mi maximus metus. Pellentesque eget augue eget ipsum facilisis varius a ac arcu. Morbi vel aliquam dui. Donec nibh justo, aliquam non justo ac, facilisis pharetra mi.</p>
+    
+    </aside>
 
     <footer></footer>
     <script src="{{ '/js/bootstrap.min.js' | url }}"></script>
